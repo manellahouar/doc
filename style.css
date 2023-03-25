@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: sans-serif ;
+    color: #888d92;
+
+}
+
+a{
+    color: #888d92;
+    text-decoration: none;
+}
+
+.active{
+    color: #00C3A5;
+}
+
+.docplanner-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+.docplanner-logo{
+width: 268px;
+height: 33px;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.Introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 ;
+
+}
+
+.Introduction-logo{
+   width: 50px;
+   height: 50px;
+
+}
+
+.Introduction-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;   
+}
+
+h1{
+    color: #00C3A5;
+    font-weight: 100;
+    margin: 1em 0;
+}
+
+.Introduction-text{
+   display: flex;
+
+}
+
+p{
+    margin: 0.8;
+    line-height: 1.75;
+    font-weight: 400;
+}
+
+.intro-par{
+    margin: 10px;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.service-card{
+    height: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+    
+}
+
+.service-card-patients{
+  background-color: #00CCB1;
+}
+
+.service-card-doctors{
+   background-color: #3D83DF;
+}
+
+.service-card-clinics{
+   background-color: #1B2734;
+}
+
+.service-card-select{
+    background-color: white;
+    padding: 10px ;
+    border-radius: 5px;
+}
+
+
+
+/* ******section3****** */
+
+.section3{
+    background-color: #D9F6F5;
+    height: 600%;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.platform{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+    width: 70%;
+    margin:auto;
+    padding: 20px;
+}
+.status h2{
+    color: #00B39B;
+    font-weight: 100;
+    width: 70%;
+    margin-bottom: 30px;
+}
+.status p{
+    color: #1B2734;
+    width: 70%;
+}
+.logo{
+    position:absolute;
+    top: 40px;
+    left:10%
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+}
+.card{
+    background-color: white;
+    border-radius: 9px;
+    text-align: center;
+    padding: 10px;
+}
+.card h2{
+    color: #00B39B;
+    font-weight: 100;
+}
+.translate{
+    transform: translateY(20px);
+}
+
+.offices_header{
+    max-width: 460px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+@media (max-width:500px){
+    .Introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 ;
+    }
+    .Introduction-text{
+        display: flex;
+    }
+    .services{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .platform{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+        width: 100%;
+        margin:auto;
+        padding: 20px;
+    }
+    
+}
